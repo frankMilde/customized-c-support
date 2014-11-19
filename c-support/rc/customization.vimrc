@@ -179,9 +179,9 @@ vnoremap { s{}<Esc>P<Right>%
 "-------------------------------------------------------------------------------
 " autocomplete quotes (visual and select mode)
 "-------------------------------------------------------------------------------
-xnoremap  '  s''<Esc>P<Right>
-xnoremap  "  s""<Esc>P<Right>
-xnoremap  `  s``<Esc>P<Right>
+"xnoremap  '  s''<Esc>P<Right>
+"xnoremap  "  s""<Esc>P<Right>
+"xnoremap  `  s``<Esc>P<Right>
 "
 "-------------------------------------------------------------------------------
 " Change the working directory to the directory containing the current file
