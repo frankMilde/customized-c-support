@@ -3,7 +3,7 @@
 § ==========================================================
 
 SetMacro( 'AUTHOR',      'Frank Milde' )
-SetMacro( 'AUTHORREF',   'fm' )
+SetMacro( 'AUTHORREF',   'FM' )
 SetMacro( 'COMPANY',     '' )
 SetMacro( 'COPYRIGHT',   'Copyright (c) |YEAR|, |AUTHOR|' )
 SetMacro( 'EMAIL',       'frank.milde (at) posteo.de' )
@@ -57,6 +57,12 @@ IncludeFile( 'cpp.statements.template'   )
 IncludeFile( 'cpp.idioms.template'       )
 IncludeFile( 'cpp.preprocessor.template' )
 IncludeFile( 'cpp.cpp.template'          )
+== ENDSTYLES ==
+
+== USE STYLES : GO ==
+IncludeFile( 'go.statements.template'   )
+IncludeFile( 'go.idioms.template'       )
+IncludeFile( 'go.cpp.template'          )
 == ENDSTYLES ==
 
 § =============================================================

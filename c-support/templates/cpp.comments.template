@@ -55,6 +55,9 @@
 //         Author:  |AUTHOR| (|AUTHORREF|), |EMAIL|
 //        Company:  |COMPANY|
 //
+//        License:  |LICENSE|
+//      Copyright:  |COPYRIGHT|
+//
 // =========================================================================
 == Comments.file description header == map:cfdh, shortcut:h, start, noindent ==
 // =========================================================================
@@ -74,6 +77,9 @@
 //
 //         Author:  |AUTHOR| (|AUTHORREF|), |EMAIL|
 //        Company:  |COMPANY|
+//
+//        License:  |LICENSE|
+//      Copyright:  |COPYRIGHT|
 //
 // =========================================================================
 

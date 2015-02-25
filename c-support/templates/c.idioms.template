@@ -4,7 +4,7 @@
 //  Description:  
 // =========================================================================
 void<CURSOR>
-|FUNCTION_NAME| ( <+argument_list+> ) {
+|FUNCTION_NAME| (<+argument_list+>) {
 <SPLIT>	return <+return_value+>;
 }  // -----  end of function |FUNCTION_NAME|  -----
 
@@ -14,8 +14,7 @@ void<CURSOR>
 //  Description:  
 // =========================================================================
 static void<CURSOR>
-|FUNCTION_NAME| ( <+argument_list+> )
-{
+|FUNCTION_NAME| (<+argument_list+>) {
 <SPLIT>	return <+return_value+>;
 }  // -----  end of static function |FUNCTION_NAME|  -----
 
@@ -27,7 +26,7 @@ static void<CURSOR>
 //  Description:  
 // =========================================================================
 int
-main ( int argc, char *argv[] ) {
+main (int argc, char *argv[]) {
 <CURSOR>
 <SPLIT>	return EXIT_SUCCESS;
 }  // ----- end of function main  -----
@@ -81,7 +80,7 @@ if ( |POINTER|==NULL ) {
 == Idioms.sizeof == map:isi, shortcut:s, insert  ==
 sizeof(<CURSOR><SPLIT>)
 == Idioms.assert == map:ias, shortcut:a, insert  ==
-assert( <CURSOR><SPLIT> );
+assert(<CURSOR><SPLIT>);
 == Idioms.open-input-file == map:ii, shortcut:i  ==
 FILE	*|?FILEPOINTER|;										// input-file pointer
 char	*|FILEPOINTER|_file_name = "<CURSOR>";		// input-file name   

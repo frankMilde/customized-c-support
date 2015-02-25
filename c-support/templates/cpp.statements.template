@@ -1,8 +1,9 @@
 == Statements.do while == map:sd, shortcut:d  ==
 do {
-<SPLIT>} while ( <CURSOR> );  // -----  end do-while  ----- 
+<SPLIT>}
+} while (<CURSOR>);  // -----  end do-while  ----- 
 == Statements.for == map:sf, shortcut:o  ==
-for ( <CURSOR>; ; )
+for (<CURSOR>; ; )
 §
 § The names INIT, CONDITION, INCREMENT, and 'for block' are used by the main
 § plugin plugin/c.vim . Please do not change.
@@ -10,37 +11,40 @@ for ( <CURSOR>; ; )
 == Statements.for block == map:sfo, shortcut:r  ==
 |DefaultMacro( 'CONDITION', '{+CONDITION+}' )|
 |DefaultMacro( 'INCREMENT', '{+INCREMENT+}' )|
-for ( |INIT|<CURSOR>; |CONDITION|; |INCREMENT| ) {
-<SPLIT>}
+for (|INIT|<CURSOR>; |CONDITION|; |INCREMENT|) {
+<SPLIT>
+}  // -----  end for  ----- 
 == Statements.range-based for == map:sfr, shortcut:a  ==
-for ( <CURSOR>: <-EXPRESSION-> ){
-<SPLIT>}
+for (<CURSOR>: <-EXPRESSION->) {
+<SPLIT>
+}  // -----  end for  ----- 
 == Statements.if == map:si, shortcut:i  ==
-if ( <CURSOR> )
+if (<CURSOR>)
 == Statements.if block == map:sif, shortcut:f  ==
-if ( <CURSOR> ) {
+if (<CURSOR>) {
 <SPLIT><-IF_PART->
-}
+}  // -----  end if  ----- 
 == Statements.if else == map:sie, shortcut:e  ==
-if ( <CURSOR> )
+if (<CURSOR>)
 <SPLIT>else
 == Statements.if block else == map:sife, shortcut:l  ==
-if ( <CURSOR> ) {
+if (<CURSOR>) {
 <SPLIT><-IF_PART->
 } else {
 <-ELSE_PART->
-}
+}  // -----  end if-else  ----- 
 == Statements.else block == map:se, shortcut:e  ==
 else {
 <CURSOR><SPLIT>
-}
+}  // -----  end else  ----- 
 == Statements.while == map:sw, shortcut:w  ==
-while ( <CURSOR> )
+while (<CURSOR>)
 == Statements.while block == map:swh, shortcut:h  ==
-while ( <CURSOR> ) {
-<SPLIT>}
+while (<CURSOR>) {
+<SPLIT>
+}  // -----  end while  ----- 
 == Statements.switch == map:ss, shortcut:s  ==
-switch ( <CURSOR> ) {
+switch (<CURSOR>) {
 	case <-LABEL->:	
 		<SPLIT>break;
 

@@ -2853,7 +2853,7 @@ if has("autocmd")
 	" DELAYED LOADING OF THE TEMPLATE DEFINITIONS
 	"
 	autocmd FileType *
-				\	if ( &filetype == 'cpp' || &filetype == 'c') |
+				\	if ( &filetype == 'cpp' || &filetype == 'c' || &filetype == 'go') |
 				\		if ! exists( 'g:C_Templates' ) |
 				\			if s:C_LoadMenus == 'yes' | call C_CreateGuiMenus ()        |
 				\			else                      | call s:C_RereadTemplates ('no') |
@@ -2870,7 +2870,7 @@ if has("autocmd")
 				"-------------------------------------------------------------------------------
 				" template styles are the default settings
 				"-------------------------------------------------------------------------------
-				autocmd BufNewFile  * if &filetype =~ '^\(c\|cpp\)$' && expand("%:e") !~ 'ii\?' |
+				autocmd BufNewFile  * if &filetype =~ '^\(c\|cpp\|go\)$' && expand("%:e") !~ 'ii\?' |
 							\     call C_InsertTemplateWrapper() | endif
 				"
 			else

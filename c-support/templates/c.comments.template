@@ -60,6 +60,9 @@
 //         Author:  |AUTHOR| (|AUTHORREF|), |EMAIL|
 //        Company:  |COMPANY|
 //
+//        License:  |LICENSE|
+//      Copyright:  |COPYRIGHT|
+//
 // =========================================================================
 
 #include <iostream>
@@ -85,6 +88,9 @@
 //
 //         Author:  |AUTHOR| (|AUTHORREF|), |EMAIL|
 //        Company:  |COMPANY|
+//
+//        License:  |LICENSE|
+//      Copyright:  |COPYRIGHT|
 //
 // =========================================================================
 //
